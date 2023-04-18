@@ -26,7 +26,7 @@ discount3.addEventListener('click', agreeDiscount3);
 
 calcular.addEventListener('click', calcularTotal);
 
-var article;
+
 
 
 
