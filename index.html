@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@500;700&family=Roboto+Condensed:wght@300;700&family=Roboto+Mono:wght@100;300;700&family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tienda Online</title>
+</head>
+<body>
+    <section class="container">
+    <header>
+        <h1 class="title">TIENDA ONLINE</h1>
+      </header>
+    
+      <section class="prices-container">
+        <h3>Seleccione un articulo o introduzca el precio manualmente.</h3>
+        <div class="articles">
+            <button class="article1 articles-card">
+                <p>ARTICULO 1</p>
+                <p>100€</p>
+            </button>
+            <button class="article2 articles-card">
+                <p>ARTICULO 2</p>
+                <p>600€</p>
+            </button>
+            <button class="article3 articles-card">
+                <p>ARTICULO 3</p>
+                <p>1359€</p>
+            </button>
+            
+
+
+        </div>
+        <div class="price-article">
+            <p>Precio manual: <input type="number" class="input-manual" id="price-input" placeholder="Poner precio"> €</p>
+            <button type="submit" id="confirmBtnPrice" class="ConfirmBtn" >Confirmar</button> 
+        </div>
+      </section>
+
+      <section id="discount-container" class="input-manual">
+        <h3>Seleccione un descuento o introduzca el descuento manualmente.</h3>
+        <div class="discounts">
+            <button class="discount1 discount-card">
+                <p>DESCUENTO </p>
+                <p>10%</p>
+            </button>
+            <button class="discount2 discount-card">
+                <p>DESCUENTO 2</p>
+                <p>15%</p>
+            </button>
+            <button class="discount3 discount-card">
+                <p>DESCUENTO 3</p>
+                <p>30%</p>
+            </button>
+        </div>
+        <div class="discount-article ">
+            <p>Descuento manual: <input type="number" class="input-manual" id="discount-input" placeholder="Poner descuento"> %</p> 
+            <!-- <button type="submit" id="confirmBtnDiscount" class="ConfirmBtn" >Confirmar</button>     -->
+            <button class="calcular-button" id="calcular">Calcular</button>
+        </div>
+      </section>
+
+      <section id="total-container">
+        <div class="button">
+            <!-- <button class="calcular-button" id="calcular">Calcular</button> -->
+        </div>
+        <div class="total-discount">Total descuento: <span class="result-discount"></span> €</div>
+        <div class="total-price">Precio final con descuento: <span class="final-price"></span> €</div>
+
+      </section>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
