@@ -13,19 +13,28 @@ const calcular = document.querySelector('#calcular');
 const resultDiscount = document.querySelector('#resultDiscount');
 const finalPrice = document.querySelector('#finalPrice');
 
+var boton = document.querySelector(".active-button");
+
 //const totalContainer = document.querySelector('#total-container');
 
 
 
+boton.addEventListener("mousedown", function() {
+  boton.classList.add("active-button");
+});
 
-article1.addEventListener('click', agreeprice1);
-article2.addEventListener('click', agreeprice2);
-article3.addEventListener('click', agreeprice3);
+// boton.addEventListener("mouseup", function() {
+//     boton.classList.remove("active-button");
+//   });
+
+// article1.addEventListener('click', agreeprice1);
+// article2.addEventListener('click', agreeprice2);
+// article3.addEventListener('click', agreeprice3);
 confirmPrice.addEventListener('click', agreepriceManual);
 
-discount1.addEventListener('click', agreeDiscount1);
-discount2.addEventListener('click', agreeDiscount2);
-discount3.addEventListener('click', agreeDiscount3);
+// discount1.addEventListener('click', agreeDiscount1);
+// discount2.addEventListener('click', agreeDiscount2);
+// discount3.addEventListener('click', agreeDiscount3);
 //confirmDiscount.addEventListener('click', agreeDiscountManual);
 
 calcular.addEventListener('click', calcularTotal);
@@ -37,21 +46,6 @@ var totalPrice;
 var totalDiscount;
 
 
-
-function agreeprice1(){
-    price = 100;
-    console.log(price);
-}
-
-function agreeprice2(){
-    price = 600;
-    console.log(price);
-}
-
-function agreeprice3(){
-    price = 1359;
-    console.log(price);
-}
 
 function agreepriceManual(){
     price = document.getElementById('price-input').value;
@@ -67,31 +61,6 @@ function showDiscountSection(){
     discountSection.style.display = "block";
 }
 
-
-function agreeDiscount1(){
-     discount = 10;
-     console.log(discount);
-     }
-
-function agreeDiscount2(){
-    discount = 15;
-    console.log(discount);
-}
-
-function agreeDiscount3(){
-    discount = 30;
-    console.log(discount);
-}
-
-
-// function agreeDiscountManual(){
-//     var discountManual = document.getElementById('discount-input').value;
-//     console.log(discountManual);
-// }
-
-
-
-
 function calcularTotal(){
 
     discount = document.getElementById('discount-input').value;
@@ -103,8 +72,49 @@ function calcularTotal(){
 
     var totalContainer = document.getElementById("total-container");
     if (discount > 0){
-       totalContainer.style.display = "block"; 
-    }
-       
+       totalContainer.style.display = "flex"; 
+    }    
 };
 
+    function addArticle1(){
+        document.getElementById('price-input').value = "100";
+        console.log(document.getElementById('price-input').value);
+        agreepriceManual()
+        showDiscountSection()
+   
+    }
+
+    function addArticle2(){
+        document.getElementById('price-input').value = "600";
+        console.log(document.getElementById('price-input').value);
+        agreepriceManual()
+        showDiscountSection()
+    }
+
+    function addArticle3(){
+        document.getElementById('price-input').value = "1359";
+        console.log(document.getElementById('price-input').value);
+        agreepriceManual()
+        showDiscountSection()
+    }
+
+
+
+
+    function addDiscount1(){
+        document.getElementById('discount-input').value = "10";
+        console.log(document.getElementById('discount-input').value);
+        calcularTotal()
+    }
+
+    function addDiscount2(){
+        document.getElementById('discount-input').value = "15";
+        console.log(document.getElementById('discount-input').value);
+        calcularTotal()
+    }
+
+    function addDiscount3(){
+        document.getElementById('discount-input').value = "30";
+        console.log(document.getElementById('discount-input').value);
+        calcularTotal()
+    }

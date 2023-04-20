@@ -186,6 +186,10 @@ font-family: 'Roboto Mono', monospace;*/
     #total-container{
         background-color: var(--total-section);
         padding: 8px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .button{
@@ -209,6 +213,11 @@ font-family: 'Roboto Mono', monospace;*/
         cursor: pointer;
         background-color: var(--Header);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
+    }
+
+    .active-button:active{
+        background-color: var(--Header);
+        box-shadow: none;
     }
 
     .total-discount{

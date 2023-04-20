@@ -20,55 +20,54 @@
       <section class="prices-container">
         <h3>Seleccione un articulo o introduzca el precio manualmente.</h3>
         <div class="articles">
-            <button class="article1 articles-card">
+            <button id="article1" class="articles-card active-button" type="button" onclick="addArticle1()">
                 <p>ARTICULO 1</p>
                 <p>100€</p>
             </button>
-            <button class="article2 articles-card">
+            <button id="article2" class="articles-card active-button" type="button" onclick="addArticle2()">
                 <p>ARTICULO 2</p>
                 <p>600€</p>
             </button>
-            <button class="article3 articles-card">
+            <button id="article3" class="articles-card active-button" type="button" onclick="addArticle3()">
                 <p>ARTICULO 3</p>
                 <p>1359€</p>
             </button>
         </div>
         <div class="price-article">
-            <p>Precio manual: <input type="number" class="input-manual" id="price-input" placeholder="Poner precio"> €</p>
-            <button type="submit" id="confirmBtnPrice" class="ConfirmBtn" >Confirmar</button> 
+            <p>Precio: <input type="number" class="input-manual" id="price-input" placeholder=" Introduzca precio"> €</p>
+            <button type="submit" id="confirmBtnPrice" class="ConfirmBtn active-button" >Confirmar</button> 
         </div>
       </section>
 
       <section id="discount-container" class="input-manual" style="display: none;">
         <h3>Seleccione un descuento o introduzca el descuento manualmente.</h3>
         <div class="discounts">
-            <button id="discount1" class="discount-card">
+
+            <button id="discount1" class="discount-card active-button" type="button" onclick="addDiscount1()">
                 <p>DESCUENTO </p>
                 <p>10%</p>
             </button>
-            <button  id="discount2" class="discount-card">
+
+            <button  id="discount2" class="discount-card active-button" type="button" onclick="addDiscount2()">
                 <p>DESCUENTO 2</p>
                 <p>15%</p>
             </button>
-            <button id="discount3" class="discount-card">
+            <button id="discount3" class="discount-card active-button" type="button" onclick="addDiscount3()">
                 <p>DESCUENTO 3</p>
                 <p>30%</p>
             </button>
         </div>
         <div class="discount-article ">
-            <p>Descuento manual: <input type="number" class="input-manual" id="discount-input" placeholder="Poner descuento"> %</p> 
-             <!-- <button type="submit" id="confirmBtnDiscount" class="ConfirmBtn" >Confirmar</button>     -->
-            <button class="calcular-button" id="calcular">Calcular</button>
+            <p>Descuento: <input type="number" class="input-manual" id="discount-input" placeholder=" Introduzca descuento"> %</p> 
+            <button class="calcular-button active-button" id="calcular">Calcular</button>
         </div>
       </section>
 
       <section id="total-container" style="display: none;">
-        <div class="button"> 
-            <!-- <button class="calcular-button" id="calcular">Calcular</button> -->
-        </div>
-        <div class="total-discount"><span id="resultDiscount"></span></div>
-        <div class="total-price"><span id ="finalPrice"></span></div>
-
+         
+            <div class="total-discount"><span id="resultDiscount"></span></div>
+            <div class="total-price"><span id ="finalPrice"></span></div>
+  
       </section>
     </section>
 
