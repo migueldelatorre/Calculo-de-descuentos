@@ -164,7 +164,6 @@ font-family: 'Roboto Mono', monospace;*/
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
     }
 
-
     .discount-card :nth-child(1){
         font-size: var(--size-S);
         font-weight: bold;
@@ -215,8 +214,6 @@ font-family: 'Roboto Mono', monospace;*/
         background-color: var(--Header);
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
     }
-
-    
 
     .total-discount{
         font-size: var(--size-S);

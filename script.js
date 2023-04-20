@@ -4,22 +4,15 @@ const article1 = document.querySelector('.article1');
 const article2 = document.querySelector('.article2');
 const article3 = document.querySelector('.article3');
 const confirmPrice = document.querySelector('#confirmBtnPrice');
-
 const discount1 = document.querySelector('#discount1');
 const discount2 = document.querySelector('#discount2');
 const discount3 = document.querySelector('#discount3');
-//const confirmDiscount = document.querySelector('#confirmBtnDiscount');
 const calcular = document.querySelector('#calcular');
 const resultDiscount = document.querySelector('#resultDiscount');
 const finalPrice = document.querySelector('#finalPrice');
 
-var boton = document.querySelector(".active-button");
+const boton = document.querySelector(".active-button");
 const reloaded = document.querySelector('#button-reload')
-
-//const totalContainer = document.querySelector('#total-container');
-
-
-
 
 boton.addEventListener("mousedown", function() {
   boton.classList.add("active-button");
@@ -29,29 +22,13 @@ reloaded.addEventListener("click", function() {
     location.reload();
 });
 
-// boton.addEventListener("mouseup", function() {
-//     boton.classList.remove("active-button");
-//   });
-
-// article1.addEventListener('click', agreeprice1);
-// article2.addEventListener('click', agreeprice2);
-// article3.addEventListener('click', agreeprice3);
 confirmPrice.addEventListener('click', agreepriceManual);
-
-// discount1.addEventListener('click', agreeDiscount1);
-// discount2.addEventListener('click', agreeDiscount2);
-// discount3.addEventListener('click', agreeDiscount3);
-//confirmDiscount.addEventListener('click', agreeDiscountManual);
-
 calcular.addEventListener('click', calcularTotal);
-
 
 var price;
 let discount;
 var totalPrice;
 var totalDiscount;
-
-
 
 function agreepriceManual(){
     price = document.getElementById('price-input').value;
@@ -87,7 +64,6 @@ function calcularTotal(){
         console.log(document.getElementById('price-input').value);
         agreepriceManual()
         showDiscountSection()
-   
     }
 
     function addArticle2(){
@@ -103,9 +79,6 @@ function calcularTotal(){
         agreepriceManual()
         showDiscountSection()
     }
-
-
-
 
     function addDiscount1(){
         document.getElementById('discount-input').value = "10";
