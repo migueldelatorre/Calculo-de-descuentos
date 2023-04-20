@@ -75,8 +75,6 @@ font-family: 'Roboto Mono', monospace;*/
         display: flex;
         justify-content: space-around;
         margin-bottom: 24px;
-        
-
     }
 
     .articles-card{
@@ -97,7 +95,6 @@ font-family: 'Roboto Mono', monospace;*/
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
     }
 
-
     .articles-card :nth-child(1){
         font-size: var(--size-S);
         font-weight: bold;
@@ -109,7 +106,6 @@ font-family: 'Roboto Mono', monospace;*/
         font-weight: bold; 
     }
 
-
     .price-article p{
         font-size: var(--size-S);
         font-weight: bold;
@@ -119,6 +115,24 @@ font-family: 'Roboto Mono', monospace;*/
     .input-manual{
         border-radius: 4px;
     }
+
+    .ConfirmBtn{
+        width: 120px;
+        height: 30px;
+        margin: 16px 0px 12px 0px;
+        font-size: var(--size-S);
+        font-weight: bold;
+        background-color: var(--total-section);
+        border-radius: 8px;
+        border: none;
+    }
+
+    .ConfirmBtn:hover{
+        cursor: pointer;
+        background-color: var(--Header);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
+    }
+
 
     #discount-container{
         background-color: var(--discount-section);

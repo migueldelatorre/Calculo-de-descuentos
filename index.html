@@ -32,9 +32,6 @@
                 <p>ARTICULO 3</p>
                 <p>1359€</p>
             </button>
-            
-
-
         </div>
         <div class="price-article">
             <p>Precio manual: <input type="number" class="input-manual" id="price-input" placeholder="Poner precio"> €</p>
@@ -42,35 +39,35 @@
         </div>
       </section>
 
-      <section id="discount-container" class="input-manual">
+      <section id="discount-container" class="input-manual" style="display: none;">
         <h3>Seleccione un descuento o introduzca el descuento manualmente.</h3>
         <div class="discounts">
-            <button class="discount1 discount-card">
+            <button id="discount1" class="discount-card">
                 <p>DESCUENTO </p>
                 <p>10%</p>
             </button>
-            <button class="discount2 discount-card">
+            <button  id="discount2" class="discount-card">
                 <p>DESCUENTO 2</p>
                 <p>15%</p>
             </button>
-            <button class="discount3 discount-card">
+            <button id="discount3" class="discount-card">
                 <p>DESCUENTO 3</p>
                 <p>30%</p>
             </button>
         </div>
         <div class="discount-article ">
             <p>Descuento manual: <input type="number" class="input-manual" id="discount-input" placeholder="Poner descuento"> %</p> 
-            <!-- <button type="submit" id="confirmBtnDiscount" class="ConfirmBtn" >Confirmar</button>     -->
+             <!-- <button type="submit" id="confirmBtnDiscount" class="ConfirmBtn" >Confirmar</button>     -->
             <button class="calcular-button" id="calcular">Calcular</button>
         </div>
       </section>
 
-      <section id="total-container">
-        <div class="button">
+      <section id="total-container" style="display: none;">
+        <div class="button"> 
             <!-- <button class="calcular-button" id="calcular">Calcular</button> -->
         </div>
-        <div class="total-discount">Total descuento: <span class="result-discount"></span> €</div>
-        <div class="total-price">Precio final con descuento: <span class="final-price"></span> €</div>
+        <div class="total-discount"><span id="resultDiscount"></span></div>
+        <div class="total-price"><span id ="finalPrice"></span></div>
 
       </section>
     </section>
