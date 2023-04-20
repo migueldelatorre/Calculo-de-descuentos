@@ -14,13 +14,19 @@ const resultDiscount = document.querySelector('#resultDiscount');
 const finalPrice = document.querySelector('#finalPrice');
 
 var boton = document.querySelector(".active-button");
+const reloaded = document.querySelector('#button-reload')
 
 //const totalContainer = document.querySelector('#total-container');
 
 
 
+
 boton.addEventListener("mousedown", function() {
   boton.classList.add("active-button");
+});
+
+reloaded.addEventListener("click", function() {
+    location.reload();
 });
 
 // boton.addEventListener("mouseup", function() {

@@ -185,8 +185,9 @@ font-family: 'Roboto Mono', monospace;*/
 
     #total-container{
         background-color: var(--total-section);
-        padding: 8px;
-        height: 70px;
+        padding: 12px 8px 8px 8px;
+
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -215,10 +216,7 @@ font-family: 'Roboto Mono', monospace;*/
         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
     }
 
-    .active-button:active{
-        background-color: var(--Header);
-        box-shadow: none;
-    }
+    
 
     .total-discount{
         font-size: var(--size-S);
@@ -229,4 +227,25 @@ font-family: 'Roboto Mono', monospace;*/
         font-size: var(--size-S);
         font-weight: bold;
     }
- 
+
+    .reload{
+        width: 160px;
+        height: 30px;
+        margin: 16px 0px 12px 0px;
+        font-size: var(--size-S);
+        font-weight: bold;
+        background-color: var(--Header);
+        border-radius: 8px;
+        border: none;
+    }
+    
+    .reload:hover{
+        cursor: pointer;
+        background-color: var(--Header);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);;
+    }
+
+    .active-button:active{
+        background-color: var(--Header);
+        box-shadow: none;
+    }
